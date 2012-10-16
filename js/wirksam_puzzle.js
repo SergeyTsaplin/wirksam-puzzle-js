@@ -258,7 +258,7 @@ var joinParts = function(curPart, joinPart){
   for (i=0; i<puzzle.parts.length; i++){
     curId = $(puzzle.parts[i]).attr('id');
     if (curId == obj1.attr('id')){
-      puzzle.parts.shift(i);
+      puzzle.parts.splice(i, 1);
       obj1.remove();
       break;
     };
